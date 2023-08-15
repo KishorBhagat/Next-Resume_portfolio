@@ -15,7 +15,7 @@ export default function EducationSingle({ startDate, endDate, institution, locat
     <div className={styles.education_single}>
       <div className={styles.session}>{startDate} — {endDate}</div>
       <div className={styles.main}>
-        <div className={styles.institution}>{institution}<IconSmallArrow /></div>
+        <div className={styles.institution}>{institution}</div>
         <div className={styles.course}>{course}</div>
         <div className={styles.grades}>{grades}</div>
       </div>

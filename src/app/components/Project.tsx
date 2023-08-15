@@ -15,7 +15,7 @@ type ProjectProps = {
 export default function Project({ title, desc, github, external, tech, image }: ProjectProps) {
   return (
     <div className={styles.project}>
-      <div className={styles.image}><img src={image}/></div>
+      <div className={styles.image}><img src={image} alt={title}/></div>
       <div className={styles.main}>
         <div className={styles.title}>{title} <span><IconSmallArrow /></span></div>
         <p className={styles.desc}>{desc}</p>

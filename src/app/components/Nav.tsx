@@ -8,7 +8,7 @@ export default function Nav() {
   
   useEffect(() => {
     const handleScroll = () => {
-      const sections: string[] = ['about', 'experience', 'projects'];
+      const sections: string[] = ['about', 'education', 'experience', 'projects', 'skills'];
       const scrollTop = window.scrollY + 250;
 
       sections.forEach((section) => {
@@ -41,6 +41,12 @@ export default function Nav() {
           </a>
         </li>
         <li className={styles.li}>
+          <a href="#education" className={`${styles.link} ${activeSection === 'education' ? styles.active : ''}`}>
+            <span className={styles.bar}></span>
+            <span className={styles.navText}>EDUCATION</span>
+          </a>
+        </li>
+        <li className={styles.li}>
           <a href="#experience" className={`${styles.link} ${activeSection === 'experience' ? styles.active : ''}`}>
             <span className={styles.bar}></span>
             <span className={styles.navText}>EXPERIENCE</span>
@@ -52,6 +58,12 @@ export default function Nav() {
             <span className={styles.navText}>PROJECTS</span>
           </a>
         </li>
+        {/* <li className={styles.li}>
+          <a href="#skills" className={`${styles.link} ${activeSection === 'skills' ? styles.active : ''}`}>
+            <span className={styles.bar}></span>
+            <span className={styles.navText}>SKILLS</span>
+          </a>
+        </li> */}
       </ul>
     </nav>
   );

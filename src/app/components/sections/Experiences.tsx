@@ -9,7 +9,7 @@ export default function Experiences() {
       {
         experiences.map(({ startDate, endDate, position, company, desc, tech }, idx) => {
           return (
-            <Experience startDate={startDate} endDate={endDate} position={position} company={company} desc={desc} tech={tech} />
+            <Experience startDate={startDate} endDate={endDate} position={position} company={company} desc={desc} tech={tech} key={`exp-${idx+1}`}/>
           )
         })
       }

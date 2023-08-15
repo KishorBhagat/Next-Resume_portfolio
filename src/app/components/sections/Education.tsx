@@ -9,7 +9,7 @@ export default function Education() {
       {
         education.map(({ startDate, endDate, institution, location, course, grades }, idx) => {
           return (
-            <EducationSingle startDate={startDate} endDate={endDate} institution={institution} location={location} course={course} grades={grades}/>
+            <EducationSingle startDate={startDate} endDate={endDate} institution={institution} location={location} course={course} grades={grades} key={`edu-${idx+1}`}/>
           )
         })
       }

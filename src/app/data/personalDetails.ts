@@ -19,8 +19,8 @@ export const projects: { title: string, desc: string, github: string, external: 
 
 export const experiences: { startDate: string, endDate: string, position: string, company: string, desc: string, tech: string[] }[] = [
   {
-    startDate: "PRESENT",
-    endDate: "JUNE 2022",
+    startDate: "2022",
+    endDate: "PRESENT",
     position: "Full Stack Developer",
     company: "Enigma",
     desc: "Contributed in building the website of annual Techno‑cultural fest of VSSUT, managed contests and events organized by The Web and Coding club of VSSUT in the annual Techno‑cultural fest 2023.",
@@ -30,7 +30,7 @@ export const experiences: { startDate: string, endDate: string, position: string
 
 export const education: { startDate: string, endDate: string, institution: string, location: string, course: string, grades: string }[] = [
   {
-    startDate: "DEC 2021",
+    startDate: "2021",
     endDate: "PRESENT",
     institution: "Veer Surendra Sai Univercity of Technology",
     location: "Burla, Odisha",
@@ -38,8 +38,8 @@ export const education: { startDate: string, endDate: string, institution: strin
     grades: "9.23 CGPA"
   },
   {
-    startDate: "AUG 2018",
-    endDate: "MAR 2020",
+    startDate: "2018",
+    endDate: "2020",
     institution: "Government Autonomous College Rourkela",
     location: "Rourkela, Odisha",
     course: "Intermediate in Science(PCM IT)",
