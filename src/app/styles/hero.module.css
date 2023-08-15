@@ -1,0 +1,117 @@
+.hero{
+    position: sticky;
+    padding: 90px 0;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.bigFont{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--lightest-slate);
+}
+
+.h2{
+    color: var(--lightest-slate);
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.p{
+    margin-top: 16px;
+    line-height: 1.5;
+    max-width: 20rem;
+}
+
+.navbar{
+    margin-top: 80px;
+}
+
+.li{
+    list-style: none;
+    width: fit-content;
+}
+.li .link{
+    color: var(--slate);
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+}
+.li .link .bar{
+    border: none;
+    border-top: 1.8px solid var(--slate);
+    height: 0;
+    width: 32px;
+    margin-right: 16px;
+    transition: all 0.3s ease;
+}
+.li .link .navText{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+.li .link:hover .bar{
+    border-top: 1.8px solid var(--lightest-slate);
+    width: 64px;
+}
+.li .link:hover .navText{
+    color: var(--lightest-slate);     
+}
+.li .active .bar{
+    border-top: 1.8px solid var(--lightest-slate);
+    width: 64px;
+}
+.li .active .navText{
+    color: var(--lightest-slate);
+}
+
+.social{
+    display: flex;
+}
+.social li{
+    list-style: none;
+    margin-right: 20px;
+}
+.social li a{
+    text-decoration: none;
+    color: var(--lighte-slate);
+    transition: 0.3s ease;
+}
+.social li:hover a{
+    text-decoration: none;
+    color: var(--lightest-slate);
+}
+.social li a svg{
+    display: flex;
+    fill: var(--light-slate);
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: 0.1s ease;
+}
+.social li:hover a svg{
+    fill: var(--lightest-slate);
+}
+
+@media (max-width: 1024px){
+    .hero{
+        position: static;
+        height: fit-content;
+        padding: 0;
+    }
+    .navbar{
+        display: none;
+    }
+}
