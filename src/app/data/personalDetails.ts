@@ -19,6 +19,14 @@ export const projects: { title: string, desc: string, github: string, external: 
 
 export const experiences: { startDate: string, endDate: string, position: string, company: string, desc: string, tech: string[] }[] = [
   {
+    startDate: "2023",
+    endDate: "PRESENT",
+    position: "Backend Lead",
+    company: "Google DSC VSSUT",
+    desc: "Serving as the backend lead for Google Developer Student Clubs(GDSC) VSSUT for the session 2023-2024.",
+    tech: ['Node', 'Express', 'Django Rest Framework', 'SQL', 'MongoDB']
+  },
+  {
     startDate: "2022",
     endDate: "PRESENT",
     position: "Full Stack Developer",
