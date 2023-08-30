@@ -286,6 +286,10 @@
     }
 }
 @media (max-width: 640px){
+    .sections{
+        gap: 0;
+        padding-bottom: 40px;
+    }
     .experience_single{
         flex-direction: column;
         gap: 1rem;
