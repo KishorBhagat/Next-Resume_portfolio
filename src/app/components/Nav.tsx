@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 import styles from "../styles/hero.module.css";
 
 export default function Nav() {
+  const navItems = ['about', 'education', 'experience', 'projects']
   const [activeSection, setActiveSection] = useState('about');
   
   useEffect(() => {
     const handleScroll = () => {
-      const sections: string[] = ['about', 'education', 'experience', 'projects', 'skills'];
+      const sections = [...navItems];
       const scrollTop = window.scrollY + 250;
 
       sections.forEach((section) => {
@@ -34,36 +35,18 @@ export default function Nav() {
   return (
     <nav className={styles.navbar}>
       <ul>
-        <li className={styles.li}>
-          <a href="#about" className={`${styles.link} ${activeSection === 'about' ? styles.active : ''}`}>
-            <span className={styles.bar}></span>
-            <span className={styles.navText}>ABOUT</span>
-          </a>
-        </li>
-        <li className={styles.li}>
-          <a href="#education" className={`${styles.link} ${activeSection === 'education' ? styles.active : ''}`}>
-            <span className={styles.bar}></span>
-            <span className={styles.navText}>EDUCATION</span>
-          </a>
-        </li>
-        <li className={styles.li}>
-          <a href="#experience" className={`${styles.link} ${activeSection === 'experience' ? styles.active : ''}`}>
-            <span className={styles.bar}></span>
-            <span className={styles.navText}>EXPERIENCE</span>
-          </a>
-        </li>
-        <li className={styles.li}>
-          <a href="#projects" className={`${styles.link} ${activeSection === 'projects' ? styles.active : ''}`}>
-            <span className={styles.bar}></span>
-            <span className={styles.navText}>PROJECTS</span>
-          </a>
-        </li>
-        {/* <li className={styles.li}>
-          <a href="#skills" className={`${styles.link} ${activeSection === 'skills' ? styles.active : ''}`}>
-            <span className={styles.bar}></span>
-            <span className={styles.navText}>SKILLS</span>
-          </a>
-        </li> */}
+        {
+          navItems.map((navItem, idx) => {
+            return (
+              <li className={styles.li} key={navItem}>
+                <a href={`#${navItem}`} className={`${styles.link} ${activeSection === navItem ? styles.active : ''}`}>
+                  <span className={styles.bar}></span>
+                  <span className={styles.navText}>{navItem}</span>
+                </a>
+              </li>
+            )
+          })
+        }
       </ul>
     </nav>
   );
