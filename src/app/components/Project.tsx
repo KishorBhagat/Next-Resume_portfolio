@@ -14,10 +14,12 @@ type ProjectProps = {
 
 export default function Project({ title, desc, github, external, tech, image }: ProjectProps) {
   return (
-    <div className={styles.project}>
+    <div className={styles.project} tabIndex={0} onClick={e => window.open(`${external}`)}>
       <div className={styles.image}><img src={image} alt={title}/></div>
       <div className={styles.main}>
-        <div className={styles.title}>{title} <span><IconSmallArrow /></span></div>
+        <a href={`${external}`} target="_blank" className={styles.external_link}>
+          <div className={styles.title}>{title} <span><IconSmallArrow /></span></div>
+        </a>
         <p className={styles.desc}>{desc}</p>
         <div className={styles.tech}>
           {

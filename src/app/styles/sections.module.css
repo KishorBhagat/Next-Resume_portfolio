@@ -160,6 +160,9 @@
 .project .main{
     flex: 1;
 }
+.project .external_link{
+    text-decoration: none;
+}
 .project .title{
     color: var(--lightest-slate);
     font-weight: 500;
@@ -294,9 +297,17 @@
         flex-direction: column;
         gap: 1rem;
     }
+    .external_link{
+        pointer-events: visible;
+    }
+    .project .external_link:hover .title span svg{
+        transform: translate(4px, -4px);
+        transition: .3s ease;
+    }
     .project{
         flex-direction: column;
         gap: 1rem;
+        pointer-events: none;
     }
     .project .image img{
         width: 200px;
@@ -304,5 +315,17 @@
     .education_single{
         flex-direction: column;
         gap: 1rem;
+    }
+    .experience_single:hover{
+        background-color: transparent;
+        box-shadow: none
+    }
+    .project:hover{
+        background-color: transparent;
+        box-shadow: none
+    }
+    .education_single:hover{
+        background-color: transparent;
+        box-shadow: none
     }
 }
