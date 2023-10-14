@@ -8,7 +8,8 @@ export default function HeroMain() {
         <div>
             <Link className={`${styles.link} ${styles.bigFont}`} href='/'>Kishor Bhagat</Link> 
             <h2 className={styles.h2}>Full Stack Web Developer</h2>
-            <p className={styles.p}>I build accessible, inclusive products and digital experiences for the web.</p>
+            {/* <p className={styles.p}>I build accessible, inclusive products and digital experiences for the web.</p> */}
+            <p className={styles.p}>Converting ideas into websites and web applications.</p>
         </div>
         <Nav />
     </div>

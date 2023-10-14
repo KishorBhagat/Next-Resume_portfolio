@@ -13,7 +13,8 @@
     text-transform: uppercase;
     color: var(--lightest-slate);
     margin-bottom: 2rem;
-    padding: 20px 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
     /* background-color: red; */
     box-shadow: 0 10px 30px -10px var(--navy);
     backdrop-filter: blur(10px);
